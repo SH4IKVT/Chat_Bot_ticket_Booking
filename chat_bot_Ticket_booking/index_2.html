@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="newcss.css">
+    <title>User Account Page</title>
+    <style>
+        body {
+            display: flex;
+            font-family: 'New Amsterdam', sans-serif;
+            background-color: #20a79a;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            height: 100vh; /* Full height */
+        }
+
+        .sidebar h2 {
+            text-align: center;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .chat-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 300px;
+            max-height: 400px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chat-header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .chat-body {
+            flex-grow: 1;
+            padding: 10px;
+            overflow-y: auto;
+        }
+
+        .chat-footer {
+            display: flex;
+            border-top: 1px solid #ddd;
+        }
+
+        .chat-footer input {
+            flex-grow: 1;
+            border: none;
+            padding: 10px;
+        }
+
+        .chat-footer button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Account</h2>
+        <ul>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <div class="right">
+                <div class="logo">
+                    <h1>NATIONAL MUSEUM</h1>
+                </div>
+            </div>
+
+            <div class="left">
+                <ul class="list" style="color: #df7a7b;">
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="about.html" target="_blank">About Us</a></li>
+                    <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                    <li><a href="payment.html" target="_blank">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="container-about">
+            <h1>About Us</h1>
+            <p>Discover the story behind our museum ticketing system.</p>
+        
+            <section class="mission">
+                <h2>Our Mission</h2>
+                <p>Our mission is to provide a seamless and convenient ticketing experience for visitors to museums worldwide.</p>
+            </section>
+        
+            <section class="team">
+                <h2>Meet Our Team</h2>
+                <div class="team-member">
+                    <img src="./our_team-2.jpg" alt="Team Member 1">
+                    <h3>MD SAHARIAR HOSSAIN (Captain)</h3>
+                    <h3>MD EJAZ ANSARI</h3>
+                    <h3>SHAIKAT SARKAR</h3>
+                    <h3>ADARSH UNIYAL</h3>
+                    <h3>HARSH SAINI</h3>
+                    <h3>TAMANNA GAUTAM</h3>
+                </div>
+            </section>
+        
+            <section class="history">
+                <h2>Our History</h2>
+                <p>Our museum ticketing system was founded in 2024 with the goal of revolutionizing the way museums interact with their visitors.</p>
+                <p>&copy; Copyright @2024 </p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Chat with Bot
+    <div class="chat-container">
+        <div class="chat-header">Chat with Us</div>
+        <div class="chat-body" id="chatBody">
+            Chat messages will appear here -->
+        <!-- </div>
+        <div class="chat-footer">
+            <input type="text" id="chatInput" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div> -->
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/5833fa3c-49d9-4fc8-a2f2-3d37ffbc1e03/webchat/v2.1/config.js"></script>
+
+</body>
+</html>

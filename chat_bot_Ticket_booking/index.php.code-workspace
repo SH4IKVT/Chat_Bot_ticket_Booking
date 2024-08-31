@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "../HTML"
+		},
+		{
+			"path": "../JAVASCRIPT"
+		},
+		{
+			"path": "../CPP"
+		},
+		{
+			"path": "../CSS"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp",
+			"ostream": "cpp",
+			"array": "cpp",
+			"initializer_list": "cpp",
+			"utility": "cpp"
+		},
+		"liveServer.settings.multiRootWorkspaceName": "Hackthon"
+	}
+}
