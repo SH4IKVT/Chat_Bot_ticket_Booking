@@ -1,0 +1,1 @@
+The site was created to automate the users strugle to book ticket while being in a ticket counter . The user can chat with the bot to generate the ticket for the museum . The bot will take the inputs and generate the ticket.
